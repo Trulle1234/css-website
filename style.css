@@ -1,0 +1,35 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1em;
+    box-sizing: border-box;
+}
+
+.css-input {
+    font-family: monospace;
+    padding: 0.5em;
+    resize: vertical;
+    width: 80%;
+    height: 80%;
+    box-sizing: border-box;
+    line-height: 1.4;
+    overflow: auto;
+}
+
+.button-row {
+    display: flex;
+    gap: 1em;
+    margin-top: 1em;
+}
+
+.apply-css, .reset-css {
+    padding: 0.5em 1em;
+    font-size: 1em;
+}
