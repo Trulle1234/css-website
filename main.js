@@ -1,8 +1,13 @@
 const cssInput = document.querySelector('.css-input');
 const applyButton = document.querySelector('.apply-css');
 const resetButton = document.querySelector('.reset-css');
+const helpButton  = document.querySelector('.help-button')
 const styleTag = document.getElementById('dynamic-style');
 const defaultValue = cssInput.value;
+
+helpButton.addEventListener('click', () => {
+    window.confirm("You can edit the styling of this website (only for yourself, unfortunately). Simply type your CSS and click the button!");
+});
 
 cssInput.addEventListener('keydown', function(e) {
     if (e.key === 'Tab') {
@@ -24,3 +29,4 @@ resetButton.addEventListener('click', () => {
     styleTag.textContent = defaultValue;
     cssInput.value = defaultValue;
 });
+
