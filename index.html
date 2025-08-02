@@ -8,41 +8,53 @@
     <style id="dynamic-style"></style>
 </head>
 <body>
+    <button class="help-button">?</button>
+
     <textarea class="css-input" lang="en" spellcheck="false">
 html, body {
-height: 100%;
-margin: 0;
+    height: 100%;
+    margin: 0;
 }
 
 body {
-display: flex;
-justify-content: center;
-align-items: center;
-flex-direction: column;
-padding: 1em;
-box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1em;
+    box-sizing: border-box;
+}
+
+.help-button {
+    position: fixed;
+    top: 1em;
+    right: 1em;
+    padding: 0.2em 0.5em;
+    font-size: 1em;
+    cursor: pointer;
 }
 
 .css-input {
-font-family: monospace;
-padding: 0.5em;
-resize: vertical;
-width: 80%;
-height: 80%;
-box-sizing: border-box;
-line-height: 1.4;
-overflow: auto;
+    font-family: monospace;
+    padding: 0.5em;
+    resize: vertical;
+    width: 80%;
+    height: 80%;
+    box-sizing: border-box;
+    line-height: 1.4;
+    overflow: auto;
 }
 
 .button-row {
-display: flex;
-gap: 1em;
-margin-top: 1em;
+    display: flex;
+    gap: 1em;
+    margin-top: 1em;
 }
 
 .apply-css, .reset-css {
-padding: 0.5em 1em;
-font-size: 1em;
+    padding: 0.5em 1em;
+    font-size: 1em;
+    cursor: pointer;
 }
     </textarea>
 

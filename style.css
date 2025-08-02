@@ -12,6 +12,15 @@ body {
     box-sizing: border-box;
 }
 
+.help-button {
+    position: fixed;
+    top: 1em;
+    right: 1em;
+    padding: 0.2em 0.5em;
+    font-size: 1em;
+    cursor: pointer;
+}
+
 .css-input {
     font-family: monospace;
     padding: 0.5em;
@@ -32,4 +41,5 @@ body {
 .apply-css, .reset-css {
     padding: 0.5em 1em;
     font-size: 1em;
+    cursor: pointer;
 }
